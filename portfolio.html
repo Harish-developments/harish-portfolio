@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+        }
+
+        .main{
+            
+            height : 100vh;
+            background : linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url("1.jpg");
+            background-position: fixed,center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-y: auto;
+        }
+
+        .home-section{
+            display: flex;
+            flex : 1;
+            height : 100vh;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right : 4rem;
+        }
+
+        .home-section p{
+            position: relative;
+            top : -2.5rem;
+            width : 35rem;
+            padding-right : 2rem;
+            padding-left : 4rem;
+            color : white;
+            font-size: 3rem;
+        }
+
+        span{
+            color : rgb(255, 0, 55);
+        }
+
+        .about-section,.project-section,.tech-stack{
+            height : 100vh;
+        }
+
+        .about-section-title,.project-section-title,.tech-stack-title{
+            color : white;
+            font-size : 3rem;
+            display: flex;
+            flex: 1;
+            padding-top : 40px;
+            justify-content: center;
+            margin: 2rem;
+        }
+
+        .about-section-content{
+            padding :10rem;
+            padding-right : 8rem;
+            color : white;
+            font-size: 2rem;
+        }
+
+        .project-section-carousal{
+            display: flex;
+            flex: 1;
+            overflow-x: auto;
+        }
+
+        .squig,.expertu,.jspy,.pyreader{
+            width : 20rem;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.455);
+            padding : 10px;
+        }
+
+        
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .squig img,.expertu img,
+        .jspy img,.pyreader img{
+            width : 20rem;
+        }
+
+        
+        .squig img{
+            width : 20rem;
+            height : 11.25rem;
+        }
+
+        .project-discription{
+            color : white;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-discription p{
+            padding : 20px;
+        }
+
+        .home-section span{
+            font-size: 5rem;
+        }
+
+        .social-media-icons button{
+            padding : 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top : 2rem;
+            margin-right: 8rem;
+        }
+
+        .tech-stack{
+            margin-bottom : 50px;
+        }
+
+        .tech-stack-grid{
+            display: grid;
+            padding-top : 3rem;
+            padding-left : 9rem;
+            padding-right : 7rem;
+            gap: 5rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .tech-stack-grid img{
+            width : 15rem;
+            border-radius : 2rem;
+        }
+
+        .nodejs img,.nodejs{
+            height : 10rem;
+            width : -30rem;
+        }
+
+        .project-discription p{
+            font-size: 1.5rem;
+        }
+
+        p.project-discription-title{
+            font-size : 2rem;
+        }
+
+        .project-section{
+            padding-right : 5rem;
+            padding-left : 8rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="home-section">
+            <p>" THE <span>#QUIETER</span> YOU BECOME ,THE MORE YOU'LL ABLE TO <span>#HEAR</span> "</p>
+            <div class="social-media-icons">
+                <a href="#"><button>Github</button></a>
+                <a href="#"><button>LinkedIn</button></a>
+            </div>
+        </div>
+        <div class="about-section">
+            <p class="about-section-title"><span>ABOUT&nbsp</span>ME</p>
+            <div class="about-section-content">
+                <p>
+                    I'm harish second year computer science student at chennai institute of technology.
+                    I'm a python developer , web developer , app developer and a cybersec enthusiatic.
+                </p>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <p class="tech-stack-title">TECH<span>&nbsp STACK</span></p>
+            <div class="tech-stack-grid">
+                <div class="python">
+                    <img src="python.png" alt="">
+                </div>
+                <div class="js">
+                    <img src="js.png" alt="">
+                </div>
+                <div class="html">
+                    <img src="html.png" alt="">
+                </div>
+                <div class="reactjs">
+                    <img src="reactjs.png" alt="">
+                </div>
+                <div class="react-native">
+                    <img src="react-native.png" alt="">
+                </div>
+                <div class="nodejs">
+                    <img src="node.js.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="project-section">
+            <p class="project-section-title"><span>MY&nbsp</span>PROJECTS</p>
+            <div class="project-section-carousal">
+                <div class="squig">
+                    <img src="squig.png"/>
+                    <div class="project-discription">
+                        <p class="project-discription-title">SQUIG</p>
+                        <p>An interpreted dynamic programming language.<br><br>
+                          Tech used : Python.
+                        </p>
+                    </div>
+                </div>
+                <div class="jspy">
+                    <img src="2.jpg"/>
+                    <div class="project-discription">
+                        <p class="project-discription-title">JSPY</p>
+                        <p>A javascript to python transpiler.<br><br>
+                            Tech used : Python .
+                        </p>
+                    </div>
+                </div>
+                <div class="expertu">
+                    <img src="expertu.png"/>
+                    <div class="project-discription">
+                        <p class="project-discription-title">EXPERTU</p>
+                        <p>A website for diognising dislexia , discalia disorders.<br><br>
+                        Tech used : Reactjs , Flask , Sqlite3 . 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
