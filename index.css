@@ -230,11 +230,11 @@ p.project-discription-title{
         display: block;
         padding : 0px;
         padding-top : 100px;
-        height : 70vh;
+        height : 100vh;
     }
 
     .tech-stack{
-        height : 80vh;
+        height : 150vh;
     }
 
     .project-section{
@@ -247,6 +247,10 @@ p.project-discription-title{
         width : 100%;
         flex-direction: column;
         width : 5rem;
+    }
+
+    .social-media-icon-button .github{
+        padding-right : 45px;
     }
 
     .home-section p{
@@ -262,6 +266,27 @@ p.project-discription-title{
     .home-section span{
         font-size : 2rem;
     }
+
+    .tech-stack-grid{
+        padding-left:10px;
+        height : 70vh;
+    }
+
+    .react-native , .nodejs , .python,.js,.html,.reactjs{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nodejs , .react-native{
+        padding-left : 40px;
+    }
+
+
+    .tech-stack-grid img{
+        width : 6rem;
+        height : 6rem;
+    }
 }
 
 @media screen and (min-width : 444px ) and (max-width : 768px){
@@ -274,7 +299,7 @@ p.project-discription-title{
     }
 
     .tech-stack{
-        height :60vh;
+        height :100vh;
     }
 
     .project-section{
