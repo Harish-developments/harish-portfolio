@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+}
+
+.main{
+    
+    height : 100vh;
+    background : linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url("1.jpg");
+    background-position: fixed,center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+
+.home-section{
+    display: flex;
+    flex : 1;
+    height : 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right : 4rem;
+    padding-left : 4rem;
+}
+
+.home-section p{
+    position: relative;
+    top : -2.5rem;
+    width : 35rem;
+    padding-right : 2rem;
+    padding-left : 4rem;
+    color : white;
+    font-size: 3rem;
+}
+
+span{
+    color : rgb(255, 0, 55);
+}
+
+.tech-stack{
+    height : 125vh;
+}
+
+.about-section-title,.project-section-title,.tech-stack-title{
+    color : white;
+    font-size : 3rem;
+    display: flex;
+    flex: 1;
+    padding-top : 40px;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.about-section-content{
+    padding :10rem;
+    padding-right : 8rem;
+    color : white;
+    font-size: 2rem;
+}
+
+.project-section-carousal{
+    display: flex;
+    flex: 1;
+    overflow-x: auto;
+}
+
+.squig,.expertu,.jspy,.pyreader{
+    width : 20rem;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.455);
+    padding : 10px;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.squig img,.expertu img,
+.jspy img,.pyreader img{
+    width : 20rem;
+}
+
+
+.squig img{
+    width : 20rem;
+    height : 11.25rem;
+}
+
+.project-discription{
+    color : white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-discription p{
+    padding : 20px;
+}
+
+.home-section span{
+    font-size: 5rem;
+}
+
+.social-media-icons button{
+    padding : 15px;
+    font-size: 2rem;
+    margin-top : 3rem;
+    margin-right : 3rem;
+    margin-left : 3rem;
+    font-weight: bold;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tech-stack{
+    margin-bottom : 50px;
+}
+
+.tech-stack-grid{
+    display: grid;
+    padding-top : 3rem;
+    padding-left : 7rem;
+    padding-right : 7rem;
+    margin-bottom: 5rem;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.tech-stack-grid img{
+    width : 10rem;
+    border-radius : 2rem;
+}
+
+.nodejs img,.nodejs{
+    height : 10rem;
+    width : -30rem;
+}
+
+.project-discription p{
+    font-size: 1.5rem;
+}
+
+p.project-discription-title{
+    font-size : 2rem;
+}
+
+.project-section{
+    padding-right : 2.5rem;
+    padding-left : 2.5rem;
+    height: 120vh;
+}
+
+.html , .python ,.nodejs,.reactjs,.react-native,.js{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.social-media-icon-button{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+
+/*
+    ----Break points----
+
+    desktop : 1200px;
+    laptop : 1024px;
+    tablet : 768px;
+    phone : 480px;
+*/
+
+@media screen and (min-width : 776px){
+    .tech-stack{
+        height : 80vh;
+    }
+
+    .project-section{
+        height : 70vh;
+    }
+
+}
+
+
+@media screen and (max-width:698px){
+    /* mobile screen */
+    .about-section-content{
+        padding : 2.5rem;
+    }
+
+    .tech-stack{
+        height : 150vh;
+    }
+
+    .tech-stack-grid{
+        padding-right : 2.5rem;
+        padding-left : 2.5rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .project-section img{
+        width : 100%;
+    }
+
+    .project-discription p{
+        font-size : 1.2rem;
+    }
+
+    .squig img{
+        height : 5.7rem;
+    }
+
+    .squig , .jspy , .expertu{
+        width : 8rem;
+    }
+}
+
+@media screen and (min-width : 351px) and (max-width : 600px){
+    .home-section{
+        display: block;
+        padding : 0px;
+        padding-top : 100px;
+        height : 70vh;
+    }
+
+    .tech-stack{
+        height : 80vh;
+    }
+
+    .project-section{
+        height : 60vh;
+    }
+
+    .social-media-icon-button{
+        display: flex;
+        flex : 1;
+        width : 100%;
+        flex-direction: column;
+        width : 5rem;
+    }
+
+    .home-section p{
+        position : relative;
+        margin-right: 0px;
+        padding-right : 0px;
+        top : 1rem;
+        font-size : 2rem;
+        width : 10rem;
+        padding-right : 200px;
+    }
+
+    .home-section span{
+        font-size : 2rem;
+    }
+}
+
+@media screen and (min-width : 444px ) and (max-width : 768px){
+
+
+    .tech-stack-grid{
+        padding-right : 3rem;
+        padding-left : 3rem;
+
+    }
+
+    .tech-stack{
+        height :60vh;
+    }
+
+    .project-section{
+        height : 50vh;
+    }
+
+    .react , .react-native, .nodejs{
+        width : 6rem;
+        height: 6rem;
+    }
+
+    .react img,.react-native img,.nodejs img{
+        width : 6rem;
+        height : 6rem;
+    }
+
+    .about-section-content{
+        padding : 3.5rem;
+    }
+}
