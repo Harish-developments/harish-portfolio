@@ -5,7 +5,7 @@
 .main{
     
     height : 100vh;
-    background : linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url("1.jpg");
+    background : linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("1.jpg");
     background-position: fixed,center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ p.project-discription-title{
 */
 
 
-@media (min-width : 480px) and (max-width : 768px){
+@media (min-width : 360px) and (max-width : 768px){
 
     .tect-stack-grid-container{
         display: flex;
@@ -190,11 +190,17 @@ p.project-discription-title{
         margin-top: 5rem;
     }
 
+    .social-media-icon-button a{
+        margin-right : 1.5rem;
+        margin-left : 1rem;
+        margin-top: 0.5rem;
+    }
+
     .tech-stack-grid{
         grid-template-columns: repeat(2,1fr);
-        margin : 0.1rem;
-        column-gap: 4rem;
-        row-gap: 5rem;
+        margin : 1rem;
+        column-gap: 3rem;
+        row-gap: 3rem;
         padding : 0px;
     }
 
@@ -204,6 +210,7 @@ p.project-discription-title{
         padding-right : 3rem ;
         padding-left: 3rem;
     }
+
     .about-section-title,.tech-stack-title{
         margin-right: 0px;
         margin-left: 0px;
@@ -222,7 +229,19 @@ p.project-discription-title{
 
     .social-media-icons p{
         font-size: 2.5rem;
+        padding-top : 2.5rem;
+        padding-left : 1rem;
         width: 10rem;
+        margin-bottom: 0px;
+    }
+
+    .tech-stack-grid div img{
+        width : 7rem;
+        height : 7rem;
+    }
+
+    .nodejs , .react-native{
+        height: 6rem;
     }
 
 }
