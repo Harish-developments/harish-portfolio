@@ -46,6 +46,10 @@ span{
     margin: 2rem;
 }
 
+.about-section-content p{
+    text-align : justify; 
+}
+
 .about-section-content{
     padding :7rem;
     padding-right : 8rem;
@@ -207,8 +211,9 @@ p.project-discription-title{
     .about-section-content{
         padding : 2rem;
         margin-right: 0rem;
-        padding-right : 3rem ;
-        padding-left: 3rem;
+        padding-right : 2rem ;
+        padding-left: 2rem;
+        font-size : 1.5rem;
     }
 
     .about-section-title,.tech-stack-title{
